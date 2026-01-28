@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="logo.ico">
+
+    <title>Igreja em Ituiutaba – Presença Igreja Cristã</title>
+
+    <!-- DESCRIÇÃO SEO -->
+    <meta name="description" content="A Presença Igreja Cristã é uma igreja em Ituiutaba–MG, que vive imersa na presença de cristo, com cultos presenciais, eventos e uma comunidade acolhedora para toda a família.">
+
+    <!-- AUTORIA -->
+    <meta name="author" content="Presença Igreja Cristã">
+
+    <!-- INDEXAÇÃO -->
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+
+    <!-- SEO LOCAL (COORDENADAS REAIS) -->
+    <meta name="geo.region" content="BR-MG">
+    <meta name="geo.placename" content="Ituiutaba">
+    <meta name="geo.position" content="-18.986556;-49.486944">
+    <meta name="ICBM" content="-18.986556, -49.486944">
+
+    <!-- CANONICAL (IMPORTANTE PARA NÃO DUPLICAR CONTEÚDO) -->
+    <link rel="canonical" href="https://www.presencaigrejacrista.com.br/">
+
+    <!-- OPEN GRAPH (WHATSAPP, FACEBOOK, INSTAGRAM) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Presença Igreja Cristã – Igreja em Ituiutaba">
+    <meta property="og:description" content="Uma igreja cristã em Ituiutaba focada em fé, acolhimento e novos começos em Jesus Cristo.">
+    <meta property="og:url" content="https://www.presencaigrejacrista.com.br/">
+    <meta property="og:image" content="https://www.presencaigrejacrista.com.br/logo.webp">
+    <meta property="og:site_name" content="Presença Igreja Cristã">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Presença Igreja Cristã – Igreja em Ituiutaba">
+    <meta name="twitter:description" content="Conheça a Presença Igreja Cristã, uma igreja em Ituiutaba–MG com cultos, eventos e uma comunidade acolhedora.">
+    <meta name="twitter:image" content="https://www.presencaigrejacrista.com.br/logo.webp">
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- ICONES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+
+    
+    <style>
+        :root {
+            --bg-body: #0a0a0a;
+            --bg-card: #121212;
+            --bg-element: #1a1a1a;
+            --accent: #ffffff;       
+            --off-white: #f5f5f5;    
+            --text-main: #ffffff;
+            --text-sec: #999999;
+            --radius: 12px;
+            --danger: #9e1b1b;       
+            --soon-gray: #444444;    
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            background-image: radial-gradient(circle at top, #1a1a1a 0%, #0a0a0a 100%);
+        }
+
+        .app-container {
+            width: 100%;
+            max-width: 450px;
+            min-height: 100vh;
+            background-color: var(--bg-card);
+            padding: 40px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            box-shadow: 0 0 40px rgba(0,0,0,0.8);
+        }
+
+        @media (min-width: 600px) {
+            .app-container {
+                min-height: auto;
+                border-radius: 24px;
+                margin: 40px 0;
+                border: 1px solid #222;
+            }
+        }
+
+        header {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo-area {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: var(--accent);
+            padding: 2px;
+            margin-bottom: 20px;
+        }
+
+        .logo-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--bg-card);
+            background-color: #333;
+        }
+
+        h1 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .tagline {
+            color: var(--text-sec);
+            font-size: 0.85rem;
+        }
+
+        .section-header {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: var(--text-sec);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .section-header::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background-color: #222;
+        }
+
+        /* Eventos */
+        .events-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .event-card {
+            background-color: var(--bg-element);
+            border-radius: var(--radius);
+            overflow: hidden;
+            text-decoration: none;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid #222;
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .event-card:not(.disabled):hover {
+            transform: translateY(-8px);
+            border-color: #333;
+            box-shadow: 3px 5px 15px rgba(255, 1, 179, 0.07);
+        }
+
+        .card-img-wrapper {
+            width: 100%;
+            height: 220px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 1s ease;
+        }
+
+        .event-card:hover .card-img-wrapper img {
+            transform: scale(1.01);
+        }
+        .event-card:not(.disabled):hover .card-img-wrapper img {
+            transform: scale(1.0);
+        }
+
+        .card-info {
+            padding: 15px;
+            background-color: var(--bg-element);
+        }
+
+        .card-info h3 {
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .tag {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            padding: 5px 12px;
+            font-size: 0.65rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            border-radius: 4px;
+            z-index: 999;
+        }
+
+        .tag.soldout { background-color: var(--danger); color: #fff; }
+        .tag.soon { background-color: var(--soon-gray); color: #fff; }
+
+        /* Infos e Cultos */
+        .info-card {
+            background-color: var(--bg-element);
+            padding: 22px;
+            border-radius: var(--radius);
+            text-align: center;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            color: var(--off-white);
+            border: 1px solid #222;
+        }
+
+        .service-times {
+            list-style: none;
+            width: 100%;
+        }
+        
+        .service-times li {
+            padding: 12px 0;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #222;
+        }
+
+        .service-times li:last-child { border-bottom: none; }
+
+        .service-times .day { font-weight: 500; color: var(--text-sec); }
+        .service-times .time { color: var(--accent); font-weight: 700; }
+
+        /* Social */
+        .social-stack { display: flex; flex-direction: column; gap: 12px; }
+
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 20px;
+            background-color: var(--bg-element);
+            color: #fff;
+            text-decoration: none;
+            border-radius: var(--radius);
+            border: 1px solid #222;
+            transition: 0.3s;
+        }
+
+        .social-btn:hover { 
+            background-color: #fffffff3;
+            color: #000; 
+            transform: scale(1.01);
+            transition: 0.6s;
+        }
+
+        .btn-content { display: flex; align-items: center; gap: 15px; font-weight: 600; font-size: 0.9rem; }
+
+        /* Localização */
+        .location-section {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .address-box {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--off-white);
+            font-size: 0.85rem;
+        }
+
+        .address-box i {
+            font-size: 1.2rem;
+            color: var(--accent);
+        }
+
+        .map-container {
+            width: 100%;
+            height: 220px;
+            border-radius: var(--radius);
+            overflow: hidden;
+            border: 1px solid #222;
+        }
+
+        .map-container iframe { width: 100%; height: 100%; border: 0; }
+
+        /* Botões de GPS */
+        .gps-links {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 5px;
+        }
+
+        .gps-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px;
+            background-color: var(--bg-element);
+            border: 1px solid #222;
+            border-radius: 8px;
+            color: var(--off-white);
+            text-decoration: none;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: 0.2s;
+        }
+
+        .gps-btn:hover {
+            border-color: #444;
+            background-color: #222;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.7rem;
+            color: #444;
+            padding: 30px 0;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+    </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Church",
+  "@id": "https://www.presencaigrejacrista.com.br/#church",
+  "name": "Presença Igreja Cristã",
+  "url": "https://www.presencaigrejacrista.com.br/",
+  "logo": "https://www.presencaigrejacrista.com.br/logo.webp",
+  "image": "https://www.presencaigrejacrista.com.br/logo.webp",
+  "description": "A Presença Igreja Cristã é uma igreja cristã localizada em Ituiutaba–MG, dedicada a Jesus Cristo, com cultos presenciais, eventos e uma comunidade acolhedora.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Jandiro Vilela de Freitas",
+    "addressLocality": "Ituiutaba",
+    "addressRegion": "MG",
+    "postalCode": "38307-846",
+    "addressCountry": "BR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -18.986556,
+    "longitude": -49.486944
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Thursday",
+      "opens": "19:30",
+      "closes": "21:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "19:00",
+      "closes": "21:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "09:00",
+      "closes": "10:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "19:00",
+      "closes": "21:30"
+    }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/presencaigrejacrista",
+    "https://www.youtube.com/@presencaigreja"
+  ]
+}
+</script>
+
+</head>
+<body>
+
+    <div class="app-container">
+        
+        <header>
+            <div class="logo-area">
+                <img src="logo.webp" alt="Logo Presença Igreja Cristã" class="logo-img">
+            </div>
+            <h1>Presença Igreja Cristã</h1>
+            <p class="tagline">Lugar de novos começos em Ituiutaba.</p>
+        </header>
+
+        <!-- QUEM SOMOS -->
+        <div class="info-card">
+            Somos uma igreja cristã em <b>Ituiutaba</b> imersa na presença de Cristo. Em cada culto, presencial e online, cultivamos uma fé viva que acolhe e caminha junto.
+        </div>
+
+        <!-- EVENTOS -->
+        <div class="section-header">Próximos Eventos</div>
+        <div class="events-stack">
+            
+            <!-- 1. Mulheres -->
+            <a href="https://vendomeuingresso.com/evento/?id=5201" target="_blank" class="event-card">
+                <div class="card-img-wrapper">
+                    <img src="mulheres.webp" alt="banner Conferência de Mulheres igreja em ituiutaba">
+                </div>
+                <div class="card-info">
+                    <h3>Conferência Mulheres na Presença</h3>
+                </div>
+            </a>
+
+            <!-- 2. Retiro -->
+            <div class="event-card disabled">
+                <div class="card-img-wrapper">
+                    <span class="tag soon">Em Breve</span>
+                    <img src="retiro.webp" alt="Banner retiro com espirito santo igreja em ituiutaba">
+                </div>
+                <div class="card-info">
+                    <h3>Retiro com Espírito Santo - 16 e 17 de fev</h3>
+                </div>
+            </div>
+
+            <!-- 3. Atos Camp -->
+            <div class="event-card disabled">
+                <div class="card-img-wrapper">
+                    <span class="tag soldout">Esgotado</span>
+                    <img src="atos.webp" alt="Banner Atos acamapmento jovens igreja em ituiutaba">
+                </div>
+                <div class="card-info">
+                    <h3>ATOS CAMP 2026 - Acampamento Jovens</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- REDES SOCIAIS -->
+        <div class="section-header">Conecte-se</div>
+        <div class="social-stack">
+            <a href="https://instagram.com/presencaigrejacrista" target="_blank" class="social-btn">
+                <div class="btn-content"><i class="fab fa-instagram"></i><span>Instagram</span></div>
+                <i class="fas fa-arrow-right" style="font-size: 0.8rem; opacity: 0.3;"></i>
+            </a>
+            <a href="https://www.youtube.com/@presencaigreja" target="_blank" class="social-btn">
+                <div class="btn-content"><i class="fab fa-youtube"></i><span>YouTube</span></div>
+                <i class="fas fa-arrow-right" style="font-size: 0.8rem; opacity: 0.3;"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5534996971870&text=Ol%C3%A1%2C%20meu%20nome%20%C3%A9%20%5BNOME%5D%20e%20gostaria%20de%20falar%20com%20algu%C3%A9m%20da%20Igreja." target="_blank" class="social-btn">
+                <div class="btn-content"><i class="fab fa-whatsapp"></i><span>Fale Conosco</span></div>
+                <i class="fas fa-arrow-right" style="font-size: 0.8rem; opacity: 0.3;"></i>
+            </a>
+        </div>
+
+        <!-- CULTOS -->
+        <div class="section-header">Nossos Cultos</div>
+        <div class="info-card">
+            <ul class="service-times">
+                <li><span class="day">Quinta-feira</span><span class="time">19:30</span></li>
+                <li><span class="day">Sábado (Jovens)</span><span class="time">19:00</span></li>
+                <li><span class="day">Domingo</span><span class="time">09:00 | 19:00</span></li>
+            </ul>
+        </div>
+
+        <!-- LOCALIZAÇÃO -->
+        <div class="section-header">Onde Estamos</div>
+        <div class="location-section">
+            <div class="address-box">
+                <i class="fas fa-location-dot"></i>
+                <div>
+                    <strong>Presença Igreja Cristã</strong><br>
+                    <span style="color: #888; font-size: smaller;">Av. Jandiro Vilela de Freitas - Ribeiro, Ituiutaba - MG, 38307-846</span>
+                </div>
+            </div>
+            
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.122617717643!2d-49.48694272498777!3d-18.986563482121342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a231e871a35d83%3A0x9d15cf7b9d4ec5dd!2sPresen%C3%A7a%20Igreja%20Crist%C3%A3!5e0!3m2!1spt-BR!2sbr!4v1700000000000" loading="lazy"></iframe>
+            </div>
+
+            <!-- OPÇÕES DE GPS -->
+            <div class="gps-links">
+                <a href="https://www.google.com/maps/dir/?api=1&destination=Presença+Igreja+Cristã+Ituiutaba" target="_blank" class="gps-btn">
+                    <i class="fab fa-google"></i> Maps
+                </a>
+                <a href="https://waze.com/ul?q=Presença Igreja Cristã Ituiutaba" target="_blank" class="gps-btn">
+                    <i class="fab fa-waze"></i> Waze
+                </a>
+            </div>
+        </div>
+
+        <footer>
+            Presença Igreja Cristã &copy; 2026<br>
+            Ituiutaba • MG
+        </footer>
+
+    </div>
+
+</body>
+</html>
