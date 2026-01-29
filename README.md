@@ -65,6 +65,46 @@ Sem frameworks ou JavaScript pesado — foco em velocidade, estabilidade e compa
   - Redes sociais
 
 ---
+## 🔥 Desempenho e Qualidade Técnica
+
+Este projeto atinge excelentes métricas de qualidade técnica, validadas pelo Google PageSpeed Insights:
+- 📱 Mobile
+  - Desempenho: 96
+
+  - Acessibilidade: 100
+
+  - Boas Práticas: 100
+
+  - SEO: 100
+
+- 💻 Desktop
+  - Desempenho: 100
+
+  - Acessibilidade: 100
+
+  - Boas Práticas: 100
+
+  - SEO: 100
+
+Relatório gerado em 29 de janeiro de 2026, diretamente pelo PageSpeed Insights, com foco em experiência mobile.
+
+Esses resultados são consequência direta de:
+
+- Arquitetura estática
+
+- HTML semântico
+
+- CSS otimizado
+
+- Ausência de JavaScript desnecessário
+
+- Imagens leves e bem dimensionadas
+
+- SEO técnico corretamente implementado
+
+O site foi projetado para carregar rápido, ranquear bem e funcionar de forma consistente em dispositivos móveis e desktops.
+
+---
 
 ## 🚀 Futuras Atualizações (Roadmap)
 
@@ -113,7 +153,7 @@ Ao reutilizar a estrutura, mantenha os créditos.
 ## ✝️ Sobre
 
 **Presença Igreja Cristã**  
-Igreja cristã em Ituiutaba–MG, dedicada a viver e compartilhar uma fé viva em Jesus Cristo.
+Igreja cristã em Ituiutaba–MG, dedicada a viver na Presença de Deus.
 
 📍 Ituiutaba – MG  
 🌐 https://www.presencaigrejacrista.com.br
