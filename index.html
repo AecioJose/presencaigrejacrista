@@ -326,6 +326,7 @@
             transition: 0.6s;
         }
 
+
         .btn-content { display: flex; align-items: center; gap: 15px; font-weight: 600; font-size: 0.9rem; }
 
         /* Localização */
@@ -395,6 +396,25 @@
             padding: 30px 0;
             letter-spacing: 1px;
             text-transform: uppercase;
+        }
+
+        .icon {
+            width: 15px;
+            height: 15px;
+            color: rgb(255, 255, 255);
+        }
+        .Gicon {
+            width: 13px;
+            height: 13px;
+        }
+        .mapsicon {
+            width: 25px;
+            height: 25px;
+        }
+        .icon svg {
+            width: 100%; 
+            height: 100%; 
+            display: block;
         }
     </style>
     <script type="application/ld+json">
@@ -478,7 +498,7 @@
             <!-- 1. Mulheres -->
             <a href="https://vendomeuingresso.com/evento/?id=5201" target="_blank" class="event-card">
                 <div class="card-img-wrapper">
-                    <img src="images/mulheres.webp" loading="lazy"decoding="async" width="100" height="100" alt="banner Conferência de Mulheres igreja em ituiutaba">
+                    <img src="images/mulheres.webp" fetchpriority="high" decoding="async" width="362" height="220" alt="banner Conferência de Mulheres igreja em ituiutaba">
                 </div>
                 <div class="card-info">
                     <h3>Conferência Mulheres na Presença</h3>
@@ -489,7 +509,7 @@
             <div class="event-card disabled">
                 <div class="card-img-wrapper">
                     <span class="tag soon">Em Breve</span>
-                    <img src="images/retiro.webp" loading="lazy"decoding="async" width="100" height="100" alt="Banner retiro com espirito santo igreja em ituiutaba">
+                    <img src="images/retiro.webp" loading="lazy"decoding="async" width="362" height="220" alt="Banner retiro com espirito santo igreja em ituiutaba">
                 </div>
                 <div class="card-info">
                     <h3>Retiro com Espírito Santo - 16 e 17 de fevereiro</h3>
@@ -500,7 +520,7 @@
             <div class="event-card disabled">
                 <div class="card-img-wrapper">
                     <span class="tag soldout">Esgotado</span>
-                    <img src="images/atos.webp" loading="lazy"decoding="async" width="100" height="100" alt="Banner Atos acamapmento jovens igreja em ituiutaba">
+                    <img src="images/atos.webp" loading="lazy"decoding="async" width="362" height="220" alt="Banner Atos acamapmento jovens igreja em ituiutaba">
                 </div>
                 <div class="card-info">
                     <h3>ATOS CAMP 2026 - Acampamento Jovens</h3>
@@ -512,16 +532,50 @@
         <h2 class="section-header">Conecte-se</h2>
         <div class="social-stack">
             <a href="https://instagram.com/presencaigrejacrista" target="_blank" class="social-btn">
-                <div class="btn-content"><i class="fab fa-instagram"></i><span>Instagram</span></div>
-                <i class="fas fa-arrow-right" style="font-size: 0.8rem; opacity: 0.3;"></i>
+                <div class="btn-content">
+                <div class="icon social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 512 512" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g><path style="opacity:0.979" fill="currentColor" d="M 163.5,-0.5 C 225.167,-0.5 286.833,-0.5 348.5,-0.5C 369.672,-0.0338248 390.672,2.79951 411.5,8C 461.111,23.9444 492.611,57.111 506,107.5C 508.363,118.896 510.197,130.23 511.5,141.5C 511.5,216.5 511.5,291.5 511.5,366.5C 510.058,397.588 500.892,426.255 484,452.5C 458.166,486.009 423.999,504.843 381.5,509C 370.673,509.77 360.006,510.604 349.5,511.5C 287.5,511.5 225.5,511.5 163.5,511.5C 131.361,511.77 100.694,504.937 71.5,491C 27.5928,463.645 4.42617,423.812 2,371.5C 1.09935,348.008 0.266021,324.675 -0.5,301.5C -0.5,270.833 -0.5,240.167 -0.5,209.5C 0.277028,186.992 1.11036,164.325 2,141.5C 3.37624,95.2735 21.8762,57.7735 57.5,29C 75.8348,16.0059 96.1682,7.67255 118.5,4C 133.572,1.67667 148.572,0.176674 163.5,-0.5 Z M 180.5,46.5 C 231.168,46.3333 281.834,46.5 332.5,47C 348.888,47.1685 365.221,48.1685 381.5,50C 421.448,55.2908 447.281,77.1241 459,115.5C 461.784,125.651 463.45,135.984 464,146.5C 466,219.5 466,292.5 464,365.5C 463.687,402.313 448.187,430.48 417.5,450C 395.328,460.218 371.995,464.884 347.5,464C 280.158,465.82 212.825,465.487 145.5,463C 89.5553,459.385 57.722,429.885 50,374.5C 49.0442,362.517 48.3775,350.517 48,338.5C 47.3333,283.167 47.3333,227.833 48,172.5C 47.1996,148.1 50.8662,124.433 59,101.5C 72.7796,73.1761 95.2796,56.3428 126.5,51C 144.571,48.5044 162.571,47.0044 180.5,46.5 Z"/></g>
+                    <g><path style="opacity:0.962" fill="currentColor" d="M 388.5,87.5 C 412.307,87.8064 424.14,99.8064 424,123.5C 418.973,143.496 406.139,151.996 385.5,149C 367.053,142.611 359.553,129.778 363,110.5C 367.004,97.6548 375.504,89.9881 388.5,87.5 Z"/></g>
+                    <g><path style="opacity:0.975" fill="currentColor" d="M 245.5,123.5 C 299.137,121.733 340.637,143.066 370,187.5C 398.035,241.118 394.035,292.118 358,340.5C 320.843,380.994 275.343,395.161 221.5,383C 165.02,364.85 132.853,326.35 125,267.5C 121.915,213.168 143.082,171.335 188.5,142C 206.359,131.879 225.359,125.712 245.5,123.5 Z M 250.5,170.5 C 221.852,173.646 199.686,187.313 184,211.5C 163.022,252.662 169.188,289.162 202.5,321C 236.42,345.785 271.087,346.785 306.5,324C 334.714,301.366 345.547,272.199 339,236.5C 325.665,193.016 296.165,171.016 250.5,170.5 Z"/></g>
+                    </svg>
+                </div>
+                </i><span>Instagram</span></div>
+                <span style="width: 14px; opacity: 0.3; z-index: 999;">
+                    <svg fill="currentcolor" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg" id="arrow">
+                    <path d="M8.29289 2.29289C8.68342 1.90237 9.31658 1.90237 9.70711 2.29289L14.2071 6.79289C14.5976 7.18342 14.5976 7.81658 14.2071 8.20711L9.70711 12.7071C9.31658 13.0976 8.68342 13.0976 8.29289 12.7071C7.90237 12.3166 7.90237 11.6834 8.29289 11.2929L11 8.5H1.5C0.947715 8.5 0.5 8.05228 0.5 7.5C0.5 6.94772 0.947715 6.5 1.5 6.5H11L8.29289 3.70711C7.90237 3.31658 7.90237 2.68342 8.29289 2.29289Z"/>
+                    </svg>
+                </span>
             </a>
+
             <a href="https://www.youtube.com/@presencaigreja" target="_blank" class="social-btn">
-                <div class="btn-content"><i class="fab fa-youtube"></i><span>YouTube</span></div>
-                <i class="fas fa-arrow-right" style="font-size: 0.8rem; opacity: 0.3;"></i>
+                <div class="btn-content">
+                <div class="icon social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 512 512" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g><path style="opacity:0.993" fill="currentColor" d="M 204.5,82.5 C 250.509,82.2534 296.509,82.7534 342.5,84C 368.898,84.6702 395.231,86.3369 421.5,89C 449.608,89.4524 470.108,101.952 483,126.5C 487.793,141.131 490.793,156.131 492,171.5C 496.667,223.833 496.667,276.167 492,328.5C 490.986,339.931 489.319,351.265 487,362.5C 481.961,385.872 468.127,401.372 445.5,409C 431.341,412.213 417.007,414.213 402.5,415C 316.203,420.089 229.87,420.756 143.5,417C 117.606,416.37 91.9395,413.704 66.5,409C 38.1938,398.95 23.0271,378.783 21,348.5C 11.6618,278.002 12.6618,207.669 24,137.5C 30.4016,114.098 45.235,98.9316 68.5,92C 81.3879,89.4778 94.3879,87.8111 107.5,87C 139.972,85.0344 172.305,83.5344 204.5,82.5 Z M 207.5,180.5 C 248.941,203.723 290.275,227.223 331.5,251C 290.5,274.5 249.5,298 208.5,321.5C 207.5,274.505 207.167,227.505 207.5,180.5 Z"/></g>
+                    </svg>
+                </div>
+                </i><span>YouTube</span></div>
+                <span style="width: 14px; opacity: 0.3; z-index: 999;">
+                    <svg fill="currentcolor" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg" id="arrow">
+                    <path d="M8.29289 2.29289C8.68342 1.90237 9.31658 1.90237 9.70711 2.29289L14.2071 6.79289C14.5976 7.18342 14.5976 7.81658 14.2071 8.20711L9.70711 12.7071C9.31658 13.0976 8.68342 13.0976 8.29289 12.7071C7.90237 12.3166 7.90237 11.6834 8.29289 11.2929L11 8.5H1.5C0.947715 8.5 0.5 8.05228 0.5 7.5C0.5 6.94772 0.947715 6.5 1.5 6.5H11L8.29289 3.70711C7.90237 3.31658 7.90237 2.68342 8.29289 2.29289Z"/>
+                    </svg>
+                </span>
             </a>
             <a href="https://api.whatsapp.com/send?phone=5534997971870&text=Ol%C3%A1%2C%20meu%20nome%20%C3%A9%20%5BNOME%5D%20e%20gostaria%20de%20falar%20com%20algu%C3%A9m%20da%20Igreja." target="_blank" class="social-btn">
-                <div class="btn-content"><i class="fab fa-whatsapp"></i><span>Fale Conosco</span></div>
-                <i class="fas fa-arrow-right" style="font-size: 0.8rem; opacity: 0.3;"></i>
+                <div class="btn-content">
+                <div class="icon social-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 512 512" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g><path style="opacity:0.979" fill="currentColor" d="M 237.5,-0.5 C 252.5,-0.5 267.5,-0.5 282.5,-0.5C 378.985,11.4854 448.485,61.1521 491,148.5C 501.775,173.939 508.609,200.273 511.5,227.5C 511.5,241.833 511.5,256.167 511.5,270.5C 499.715,363.947 452.049,432.113 368.5,475C 291.67,508.714 215.67,506.881 140.5,469.5C 96.9967,483.336 53.6633,497.336 10.5,511.5C 7.83333,511.5 5.16667,511.5 2.5,511.5C 1.83333,510.167 0.833333,509.167 -0.5,508.5C -0.5,505.833 -0.5,503.167 -0.5,500.5C 13.9991,459.006 28.3325,417.339 42.5,375.5C 8.07109,314.66 -0.428914,250.326 17,182.5C 42.1795,101.319 94.3462,45.1521 173.5,14C 194.465,6.91059 215.798,2.07726 237.5,-0.5 Z M 239.5,52.5 C 315.916,47.9685 377.082,75.9685 423,136.5C 465.851,202.834 469.851,271.501 435,342.5C 395.845,408.1 337.845,442.767 261,446.5C 236.076,446.041 211.91,441.541 188.5,433C 174.294,426.396 160.294,419.563 146.5,412.5C 124.22,419.205 102.053,426.205 80,433.5C 86.5978,412.035 93.4312,390.535 100.5,369C 100.091,366.679 99.2572,364.513 98,362.5C 57.8665,302.965 50.8665,239.632 77,172.5C 102.617,117.052 144.451,79.7187 202.5,60.5C 214.806,57.0411 227.139,54.3744 239.5,52.5 Z"/></g>
+                    <g><path style="opacity:0.98" fill="currentColor" d="M 184.5,131.5 C 193.39,129.958 200.557,132.625 206,139.5C 214.218,157.268 221.884,175.268 229,193.5C 230.462,200.431 229.128,206.764 225,212.5C 220.21,218.959 215.043,225.126 209.5,231C 230.249,262.417 257.749,285.917 292,301.5C 300.211,292.291 308.044,282.791 315.5,273C 322.446,269.778 329.446,269.778 336.5,273C 351.833,280.333 367.167,287.667 382.5,295C 391.098,300.5 393.932,308.333 391,318.5C 390.142,330.087 385.975,340.254 378.5,349C 368.644,357.929 357.31,364.263 344.5,368C 326.429,370.823 308.763,369.156 291.5,363C 248.312,350.165 212.145,326.665 183,292.5C 170.02,276.54 158.02,259.873 147,242.5C 131.173,214.933 129.506,186.599 142,157.5C 151.242,140.795 165.409,132.129 184.5,131.5 Z"/></g>
+                    </svg>
+                </div>
+                </i><span>Fale Conosco</span></div>
+                <span style="width: 14px; opacity: 0.3; z-index: 999;">
+                    <svg fill="currentcolor" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg" id="arrow">
+                    <path d="M8.29289 2.29289C8.68342 1.90237 9.31658 1.90237 9.70711 2.29289L14.2071 6.79289C14.5976 7.18342 14.5976 7.81658 14.2071 8.20711L9.70711 12.7071C9.31658 13.0976 8.68342 13.0976 8.29289 12.7071C7.90237 12.3166 7.90237 11.6834 8.29289 11.2929L11 8.5H1.5C0.947715 8.5 0.5 8.05228 0.5 7.5C0.5 6.94772 0.947715 6.5 1.5 6.5H11L8.29289 3.70711C7.90237 3.31658 7.90237 2.68342 8.29289 2.29289Z"/>
+                    </svg>
+                </span>
             </a>
         </div>
 
@@ -539,7 +593,22 @@
         <div class="section-header">Onde Estamos</div>
         <div class="location-section">
             <div class="address-box">
-                <i class="fas fa-location-dot"></i>
+                <div class="icon mapsicon">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+                    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                    fill="currentColor" >
+                    <path d="M2390 4689 c-247 -28 -499 -125 -707 -272 -112 -80 -261 -229 -342
+                    -343 -79 -112 -182 -321 -216 -439 -55 -193 -75 -393 -56 -570 60 -559 412
+                    -1264 1057 -2115 295 -390 323 -415 449 -408 61 3 78 8 109 32 77 58 449 546
+                    658 863 522 789 755 1410 709 1895 -33 360 -180 675 -432 927 -322 323 -775
+                    481 -1229 430z m294 -979 c199 -51 349 -207 391 -405 8 -38 15 -86 15 -105 0
+                    -63 -29 -174 -62 -240 -40 -78 -132 -174 -209 -218 -66 -37 -191 -72 -259 -72
+                    -68 0 -193 35 -259 72 -72 41 -158 127 -199 199 -37 66 -72 191 -72 259 0 26
+                    9 82 20 124 49 191 192 336 382 386 94 25 157 25 252 0z"/>
+                    </g>
+                    </svg>
+                </div>
+
                 <div>
                     <strong>Presença Igreja Cristã</strong><br>
                     <span style="color: #888; font-size: smaller;">Av. Jandiro Vilela de Freitas - Ribeiro, Ituiutaba - MG, 38307-846</span>
@@ -553,10 +622,24 @@
             <!-- OPÇÕES DE GPS -->
             <div class="gps-links">
                 <a href="https://www.google.com/maps/dir/?api=1&destination=Presença+Igreja+Cristã+Ituiutaba" target="_blank" class="gps-btn">
-                    <i class="fab fa-google"></i> Maps
+                    <div class="icon Gicon">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 512 512" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g><path style="opacity:1" fill="currentColor" d="M 233.5,-0.5 C 248.5,-0.5 263.5,-0.5 278.5,-0.5C 326.704,4.62246 370.37,21.4558 409.5,50C 411.211,51.1332 411.711,52.6332 411,54.5C 391.333,79.8333 371.667,105.167 352,130.5C 304.09,95.799 252.257,88.6324 196.5,109C 137.321,135.824 104.488,181.657 98,246.5C 97.0374,311.463 124.204,360.63 179.5,394C 230.168,419.933 280.835,419.933 331.5,394C 367.193,373.799 391.86,344.299 405.5,305.5C 355.504,304.5 305.504,304.167 255.5,304.5C 255.5,271.833 255.5,239.167 255.5,206.5C 340.833,206.5 426.167,206.5 511.5,206.5C 511.5,230.167 511.5,253.833 511.5,277.5C 498.959,377.766 446.959,449.266 355.5,492C 330.316,502.296 304.316,508.796 277.5,511.5C 262.833,511.5 248.167,511.5 233.5,511.5C 133.234,498.959 61.734,446.959 19,355.5C 8.70393,330.316 2.20393,304.316 -0.5,277.5C -0.5,262.833 -0.5,248.167 -0.5,233.5C 12.0408,133.234 64.0408,61.734 155.5,19C 180.684,8.70393 206.684,2.20393 233.5,-0.5 Z"/></g>
+                        </svg>
+                    </div> 
+                    Maps
                 </a>
                 <a href="https://waze.com/ul?q=Presença Igreja Cristã Ituiutaba" target="_blank" class="gps-btn">
-                    <i class="fab fa-waze"></i> Waze
+                    <div class="icon wazeIcon">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 512 512" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g><path style="opacity:1" fill="currentColor" d="M 511.5,203.5 C 511.5,216.833 511.5,230.167 511.5,243.5C 501.206,311.937 466.539,364.104 407.5,400C 422.197,430.386 417.531,457.386 393.5,481C 373.834,495.998 352.167,499.664 328.5,492C 302.02,480.545 288.353,460.378 287.5,431.5C 266.156,431.663 244.822,431.33 223.5,430.5C 222.257,465.483 204.59,486.983 170.5,495C 136.898,498.456 113.065,484.956 99,454.5C 94.9263,440.638 94.4263,426.638 97.5,412.5C 71.7216,406.75 48.3883,395.916 27.5,380C 12.429,367.456 3.09565,351.622 -0.5,332.5C -0.5,326.167 -0.5,319.833 -0.5,313.5C 1.6467,309.189 4.98004,306.022 9.5,304C 41.2824,304.551 59.1157,289.051 63,257.5C 56.1036,170.147 88.2703,101.647 159.5,52C 227.734,11.1607 299.401,4.16066 374.5,31C 443.229,58.6488 487.395,108.149 507,179.5C 508.628,187.619 510.128,195.619 511.5,203.5 Z M 286.5,47.5 C 345.081,48.2175 394.581,69.5509 435,111.5C 480.935,165.529 490.602,225.529 464,291.5C 446.163,328.337 419.163,356.337 383,375.5C 354.478,361.731 328.478,365.398 305,386.5C 301.781,390.052 298.948,393.885 296.5,398C 292.961,398.282 289.461,398.782 286,399.5C 261.816,398.946 237.649,397.78 213.5,396C 196.121,371.99 172.787,362.99 143.5,369C 133.653,371.588 124.986,376.255 117.5,383C 97.0019,379.388 77.6686,372.388 59.5,362C 50,356.5 42.5,349 37,339.5C 35.872,337.655 35.372,335.655 35.5,333.5C 59.4079,328.95 76.5746,315.617 87,293.5C 93.7645,276.844 97.2645,259.511 97.5,241.5C 93.6204,168.268 122.954,112.768 185.5,75C 217.014,57.5402 250.681,48.3735 286.5,47.5 Z"/></g>
+                        <g><path style="opacity:1" fill="currentColor" d="M 217.5,159.5 C 233.934,157.111 241.434,164.111 240,180.5C 234.521,191.806 226.021,194.639 214.5,189C 206.222,181.268 205.388,172.768 212,163.5C 214.015,162.303 215.849,160.97 217.5,159.5 Z"/></g>
+                        <g><path style="opacity:1" fill="currentColor" d="M 345.5,159.5 C 361.934,157.111 369.434,164.111 368,180.5C 362.521,191.806 354.021,194.639 342.5,189C 334.222,181.268 333.388,172.768 340,163.5C 342.015,162.303 343.849,160.97 345.5,159.5 Z"/></g>
+                        <g><path style="opacity:1" fill="currentColor" d="M 201.5,239.5 C 209.187,237.996 215.687,239.996 221,245.5C 232.352,288.088 259.852,306.588 303.5,301C 324.523,295.31 339.356,282.476 348,262.5C 349.542,256.662 351.542,250.995 354,245.5C 360.945,238.931 368.778,237.764 377.5,242C 383.167,247.319 385.001,253.819 383,261.5C 371.011,302.821 343.845,327.321 301.5,335C 254.473,339.409 219.973,320.909 198,279.5C 193.133,270.038 191.133,260.038 192,249.5C 194.022,244.98 197.189,241.647 201.5,239.5 Z"/></g>
+                        </svg>
+
+                    </div>
+                    Waze
                 </a>
             </div>
         </div>
@@ -567,8 +650,6 @@
         </footer>
 
     </main>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" fetchpriotity="low">
 </body>
 
 </html>
