@@ -225,7 +225,7 @@
         .event-card:not(.disabled):hover {
             transform: translateY(-8px);
             border-color: #333;
-            box-shadow: 3px 5px 15px rgba(255, 1, 179, 0.07);
+            box-shadow: 3px 5px 15px rgba(255, 223, 42, 0.04);
         }
 
         .card-img-wrapper {
@@ -336,7 +336,7 @@
         .btn-content { display: flex; align-items: center; gap: 15px; font-weight: 600; font-size: 0.9rem; }
 
         /* Localização */
-        .location-section {
+        .location-section, .rateus-section {
             display: flex;
             flex-direction: column;
             gap: 15px;
@@ -373,7 +373,7 @@
             margin-top: 5px;
         }
 
-        .gps-btn {
+        .gps-btn, .google-review-btn {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -390,7 +390,7 @@
             transition: 0.2s;
         }
 
-        .gps-btn:hover {
+        .gps-btn:hover, .google-review-btn:hover {
             border-color: #444;
             background-color: #222;
         }
@@ -399,7 +399,7 @@
             text-align: center;
             font-size: 0.7rem;
             color: #888;
-            padding: 40px 0;
+            padding: 50px 0 30px 0;
             letter-spacing: 1px;
             text-transform: uppercase;
         }
@@ -421,6 +421,27 @@
             width: 100%; 
             height: 100%; 
             display: block;
+        }
+
+        .rateus-section > p{
+            background-color: var(--bg-element);
+            padding: 22px;
+            border-radius: var(--radius);
+            text-align: center;
+            font-size: 0.85rem;
+            line-height: 1.6;
+            color: var(--off-white);
+            /* border: 1px solid #222; */
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .google-review-btn {
+            margin: 25px auto 0 auto;
+            border: 2px solid #222;
+            width: fit-content;
+            font-size: 0.8rem;
         }
     </style>
     <script type="application/ld+json">
@@ -499,7 +520,7 @@
 
         <!-- EVENTOS -->
         <h2 class="section-header">Próximos Eventos</h2>
-        <div class="events-stack">
+        <section class="events-stack">
             
             <!-- 1. Mulheres -->
             <a href="https://vendomeuingresso.com/evento/?id=5201" target="_blank" class="event-card">
@@ -512,17 +533,17 @@
             </a>
 
             <!-- 2. Retiro -->
-            <div class="event-card disabled">
+            <a href="https://wa.me/5534997726283?text=Ol%C3%A1%2C%20vim%20pelo%20site%2C%20meu%20nome%20%C3%A9%20%5BNOME%5D%20e%20gostaria%20de%20me%20inscrever%20para%20o%20Retiro%20na%20Presen%C3%A7a%20Do%20Esp%C3%ADrito%20Santo%2C%20nos%20dias%2016%20e%2017%20de%20fevereiro" target="_blank" class="event-card">
                 <div class="card-img-wrapper">
-                    <span class="tag soon">Em Breve</span>
+                    <!-- <span class="tag soon">Em Breve</span> -->
                     <img src="images/retiro-400.webp" srcset="images/retiro-400.webp 400w, images/retiro-800.webp 800w" loading="lazy"decoding="async" width="362" height="220" sizes="(max-width: 450px) 90vw, 400px" alt="Banner retiro com espirito santo igreja em ituiutaba">
                 </div>
                 <div class="card-info">
                     <h3>Retiro com Espírito Santo - 16 e 17 de fevereiro</h3>
                 </div>
-            </div>
+            </a>
 
-            <!-- 3. Atos Camp -->
+            <!-- 3. Atos Camp 
             <div class="event-card disabled">
                 <div class="card-img-wrapper">
                     <span class="tag soldout">Esgotado</span>
@@ -531,12 +552,12 @@
                 <div class="card-info">
                     <h3>ATOS CAMP 2026 - Acampamento Jovens</h3>
                 </div>
-            </div>
-        </div>
+            </div>-->
+        </section>
 
         <!-- REDES SOCIAIS -->
         <h2 class="section-header">Conecte-se</h2>
-        <div class="social-stack">
+        <section class="social-stack">
             <a href="https://instagram.com/presencaigrejacrista" target="_blank" class="social-btn">
                 <div class="btn-content">
                 <div class="icon social-icon">
@@ -583,21 +604,21 @@
                     </svg>
                 </span>
             </a>
-        </div>
+        </section>
 
         <!-- CULTOS -->
         <h2 class="section-header">Nossos Cultos</h2>
-        <div class="info-card">
+        <section class="info-card">
             <ul class="service-times">
                 <li><span class="day">Quinta-feira</span><span class="time">19:30</span></li>
                 <li><span class="day">Sábado (Jovens)</span><span class="time">19:00</span></li>
                 <li><span class="day">Domingo</span><span class="time">09:00 | 19:00</span></li>
             </ul>
-        </div>
+        </section>
 
         <!-- LOCALIZAÇÃO -->
         <div class="section-header">Onde Estamos</div>
-        <div class="location-section">
+        <section class="location-section">
             <div class="address-box">
                 <div class="icon mapsicon">
                     <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
@@ -648,7 +669,13 @@
                     Waze
                 </a>
             </div>
-        </div>
+        </section>
+
+        <div style="margin-top: 15px;" class="section-header">Avalie-nosㅤ★★★★★</div>
+        <section class="rateus-section">
+            <p>Sua avaliação nos ajuda a alcançar mais pessoas e a testemunhar, de forma real, quem somos e como vivemos na presença de Deus.<a href="https://www.google.com/search?sxsrf=ANbL-n6nZ7qsajKSELWrx3p3mLwWNVFUdw:1770127141488&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOZEhv1Mjj1yUQGModTD5K-ztsJmx4P5wJXmZJPn1hwq3W1Ctw5A-WwnbJMVB4AlB-LsHIVBF_8Xx0CNYeuJUaGE6XAMzPqq_v53wN3q7YuEj0WySwQ%3D%3D&q=Presen%C3%A7a+Igreja+Crist%C3%A3+Reviews&aic=0" target="_blank" rel="noopener noreferrer" class="google-review-btn">⭐ Avalie nossa igreja no Google</a></p>
+            
+        </section>
 
         <footer>
             Presença Igreja Cristã &copy; 2026<br>
